@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>YouTube Unbl*cked</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- FONTS -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-	 rel="stylesheet">
-  <!-- Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QR0J225RDB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QR0J225RDB');
-</script>
-</head>
-
 <body>
-	<h1 class="center">YouTube Unbl*cked</h5>
-		<div class=center>
-			<h3>Insert YouTube Link:</h3>
-			<input id="url" type="text" placeholder="" required>
-      <button id="submit" class="submit-button">Watch</button>
-  </div>
-  <br>
-  <div id="instructions" class="center">
-    <hr style="width:25% !important">
-    <h3>About</h3>
-    <p>Use to get around blocks, and watch YouTube without ads and (mostly) tracker free! Just paste in the link and click Watch!</p>
-    <h3>Not Working?</h3>
-    <p>Make sure there isn't anything funky at the end of the link, just the video ID!</p>
-    
-    
+<script>
+Open()
+async function Open(){
 
-    </div>
-	<div id="video-holder-holder">
-		<div id="video-holder" class="center" style="display:none;">
-			<hr>
-			<iframe id="video" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?wmode=transparent&amp;iv_load_policy=3&amp;autoplay=0&amp;html5=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;theme=light" frameborder="0" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
-		</div>
-	</div>
-  <hr class="space">
+const win = window.open("about:blank", "_blank")
+
+fetch("https://cdn.jsdelivr.net/gh/4a987fguirfejhgberkjg/Duxks-domain/singlefile.html")
+.then(response => response.text()) // when its fetched read the response as text
+.then(text => { //after the response is known set text to this
+
+var link = win.document.createElement('link'); //Set up so it set the favicon before it adds every thing else
+link.rel = 'icon';
+win.document.head.appendChild(link);
+link.href = "https://resources.finalsite.net/images/f_auto,q_auto/v1626100427/k12albemarleorg/uj41eppe27bunrvhwnep/PowerSchoolLogos_Vertical-01.png";
+
+win.document.open(); // open path way for adding things
+win.document.write(text); //writes the code
+win.document.title = "Home | Schoology";
+
+           
+    setTimeout(function() {
+        window.close();
+    }, 5000); 
+
+});
+
+}
+
+//https://cdn.jsdelivr.net/gh/JJthecoolest/goon@master/singlefile.html
+
+</script>
+
 </body>
-    <footer class="center">
-    	<br>
-      <hr>
-    	<p>Made by Temu, aka the owner of Temu-N-Taco</p>
-    </footer>
-	<script src="script.js"></script>
 </html>
